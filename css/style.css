@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    padding: 0 32px;
+    position: sticky;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+}
+
+nav img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+nav li {
+    padding: 10px 20px;    
+}
+nav li a {
+    display: block;
+    color: #ddd;
+    font-size: 15pt;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #0056b3;   
+    box-shadow: 0px 2px  rgba(0, 0, 0, 0.3)
+}
+
+nav li:hover a {
+    color: #fff;
+}
+
+ul ul li a{
+    margin-left: 20pt;
+}
+
+#sidebar-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    background: #333;
+    padding-top: 20px;
+}
+
+#sidebar-wrapper .nav {
+    width: 100%;
+}
+
+#sidebar-wrapper .nav a {
+    text-align: left;
+    font-weight: bold;
+    color: #ddd;
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    display: block;
+    transition: all 0.3s;
+}
+
+#sidebar-wrapper .nav a.active {
+    color: #fff;
+    background-color: #0056b3;
+}
+
+#sidebar-wrapper .nav a:hover,
+#sidebar-wrapper .nav a:focus {
+    color: #fff;
+    background-color: #0062cc;
+}
+
+#page-content-wrapper {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+}
+
+section {
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 16px 36px;
+    margin: 12px 32px;
+    background-color: #f2f2f2;
+}
+
+/* h1,
+h2 {
+    color: #333;
+    margin-top: 0; 
+} */
+
+/* p {
+    line-height: 1.8; 
+    margin-bottom: 10px; 
+} */
+
+@media (max-width: 992px) {
+    #sidebar-wrapper {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #page-content-wrapper {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    header {
+        margin-left: 0;
+    }
+}
