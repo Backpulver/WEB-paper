@@ -17,98 +17,60 @@ header {
 }
 
 nav {
-    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
     position: sticky;
     text-align: left;
-    display: flex;
-    justify-content: center;
+    height: 100vh;
     top: 0;
     left: 0;
-    overflow: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     background-color: #333;
 }
 
-nav img {
+nav div {
     width: 100%;
-    height: auto;
+    display: flex;
+    width: 12em;
+}
+
+nav img {
+    flex-grow: 1;
+    width: 100%;
     padding: 10px;
     box-sizing: border-box;
 }
 
 nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-grow: 1;
     list-style: none;
     margin: 0;
-    padding: 0;
-} 
-nav li {
-    padding: 10px 20px;    
+    padding: 40px 10px;
+    font-size: 6em;
 }
+
 nav li a {
     display: block;
     color: #ddd;
-    font-size: 15pt;
+    font-size: 0.25em;
     text-decoration: none;
+    padding: 8px 30px;
 }
 
 nav li:hover {
-    background-color: #0056b3;   
-    box-shadow: 0px 2px  rgba(0, 0, 0, 0.3)
+    background-color: #0056b3;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.3)
 }
 
 nav li:hover a {
     color: #fff;
 }
 
-ul ul li a{
+ul ul li a {
     margin-left: 20pt;
-}
-
-#sidebar-wrapper {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 200px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    overflow-y: auto;
-    background: #333;
-    padding-top: 20px;
-}
-
-#sidebar-wrapper .nav {
-    width: 100%;
-}
-
-#sidebar-wrapper .nav a {
-    text-align: left;
-    font-weight: bold;
-    color: #ddd;
-    background: none;
-    border: none;
-    padding: 10px 15px;
-    text-transform: uppercase;
-    display: block;
-    transition: all 0.3s;
-}
-
-#sidebar-wrapper .nav a.active {
-    color: #fff;
-    background-color: #0056b3;
-}
-
-#sidebar-wrapper .nav a:hover,
-#sidebar-wrapper .nav a:focus {
-    color: #fff;
-    background-color: #0062cc;
-}
-
-#page-content-wrapper {
-    margin-left: 220px;
-    padding: 20px;
-    width: calc(100% - 220px);
 }
 
 section {
